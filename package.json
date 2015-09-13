@@ -1,0 +1,30 @@
+{
+  "name": "objectly",
+  "version": "1.0.0",
+  "description": "Create objects from sql-friendly objects descriptions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lakowske/objectly.git"
+  },
+  "keywords": [
+    "objects",
+    "sql",
+    "description"
+  ],
+  "author": "Seth Lakowske",
+  "license": "BSD-3",
+  "bugs": {
+    "url": "https://github.com/lakowske/objectly/issues"
+  },
+  "homepage": "https://github.com/lakowske/objectly",
+  "devDependencies": {
+    "tape": "^4.2.0"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.3"
+  }
+}

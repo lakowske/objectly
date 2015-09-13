@@ -1,11 +1,11 @@
-# Objectly
-Creates objects from object descriptions that are sql friendly
+/*
+ * (C) 2015 Seth Lakowske
+ */
 
-# Create default javascript object using sql friendly object descriptions
+var test     = require('tape');
+var objectly = require('./');
 
-```
-
-fields = [
+sceneNodeFields = [
     {name : 'id', type: 'text', predicate : 'primary key'},
     {name : 'name', type: 'text'},
     {name : 'parent', type: 'text'},
@@ -19,25 +19,11 @@ fields = [
     {name : 'localvectors', type : 'float(53)[3][3]'}
 ]
 
-var defaultObject = objectly.getObject(fields);
+test('can create an object', function(t) {
 
-console.log(defaultObject);
+    var sceneNode = objectly.getObject(sceneNodeFields);
 
-```
-
-# Output
-```
-{
-  id: '003e897c-d32b-482a-84cc-41912b2720d8',
-  name: '',
-  parent: '',
-  about_up: 0,
-  about_right: 0,
-  about_forward: 0,
-  x: 0,
-  y: 0,
-  z: 0,
-  localmatrix: [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
-  localvectors: [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
-}
-```
+    console.log(sceneNode);
+    
+    t.end();
+})
