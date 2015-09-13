@@ -1,10 +1,8 @@
 # Objectly
 
-Creates objects from object descriptions that are sql friendly
-
-# Create javascript object
-
 Create default javascript object using sql friendly object descriptions
+
+# example
 
 ```
 
@@ -28,7 +26,8 @@ console.log(defaultObject);
 
 ```
 
-# Output
+output:
+
 ```
 {
   id: '003e897c-d32b-482a-84cc-41912b2720d8',
@@ -44,3 +43,15 @@ console.log(defaultObject);
   localvectors: [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
 }
 ```
+
+# install
+
+With [npm](https://npmjs.org) do:
+
+```
+npm install objectly
+```
+
+# license
+
+BSD-3
