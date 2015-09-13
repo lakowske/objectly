@@ -1,7 +1,10 @@
 # Objectly
+
 Creates objects from object descriptions that are sql friendly
 
-# Create default javascript object using sql friendly object descriptions
+# Create javascript object
+
+Create default javascript object using sql friendly object descriptions
 
 ```
 
